@@ -17,8 +17,8 @@ there is data, for test this in data/ folder
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/jero98772/turing-genome-processor.git
-   cd turing-genome-processor
+   git clone https://github.com/jero98772/Turing-Machine-Genome-Processor.git
+   cd Turing-Machine-Genome-Processor/
    ```
 
 2. **Prepare a FASTA file**: You need a FASTA file containing the genome sequences that you want to process. Each sequence should be in standard FASTA format:
@@ -32,12 +32,12 @@ there is data, for test this in data/ folder
 3. **Run the program**:
    You can execute the program by passing the path to the FASTA file:
    ```bash
-   python turing_machine.py your_genome_file.fasta
+   python main.py your_genome_file.fasta
    ```
 
    Example:
    ```bash
-   python turing_machine.py genome_sample.fasta
+   python main.py genome_sample.fasta
    ```
 
 4. **Program Output**:
