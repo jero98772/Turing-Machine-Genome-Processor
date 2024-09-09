@@ -47,13 +47,15 @@ there is data, for test this in data/ folder
 ## 🛠️ Requirements
 
 - Python 3.6 or higher 🐍.
-- A genome sequence in FASTA format 📜.
+- A genome sequence in FASTA format 📜. (see example data in data folder)
 
 ## 💻 Arguments
 
 - **fasta_file**: Path to the FASTA file that contains genome sequences to be processed by the Turing Machine.
 
 ## ⚙️ How It Works
+
+It is like [Brainfuck](https://es.wikipedia.org/wiki/Brainfuck)
 
 - The Turing Machine starts at the first codon and moves through the genome following instructions based on nucleotide letters:
   - `A`, `T`, `U`: Moves the pointer to the next position on the tape.
@@ -62,11 +64,13 @@ there is data, for test this in data/ folder
 
 - Start codons (`ATG`/`AUG`) mark the beginning of a loop, while stop codons (`UAA`, `UAG`, `UGA`, etc.) indicate the end of the loop. If the machine encounters a stop codon while the memory pointer has a non-zero value, it jumps back to the start codon.
 
+I do use c and g for  Decreases/Increases the value because the beheivor of skew diagram is in base of the information of citocine and guanide for find the position of replication 
+
 ## 👩‍💻 Example
 
 Here is a sample output when running the Turing Machine with a small FASTA file:
 ```bash
-python turing_machine.py example.fasta
+python main.py example.fasta
 Tape after processing: [0, 1, 1, 0, 2, 0, 0, 0, 0, 0]
 Pointer position: 5
 ```
