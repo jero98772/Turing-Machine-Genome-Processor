@@ -1,10 +1,14 @@
 # 🧬 Turing Machine Genome Processor 🦠
 
+**Translations in**
+[Español](https://github.com/jero98772/Turing-Machine-Genome-Processor/blob/main/docs/readme_es.md)
+[Deutsch](https://github.com/jero98772/Turing-Machine-Genome-Processor/blob/main/docs/readme_de.md) 
+
 Welcome to the **Turing Machine Genome Processor**! This project simulates a Turing Machine that navigates through genome sequences, processing based on start and stop codons. It's designed to work on sequences provided in FASTA format. 🚀
 
 ## 📝 Features
 - Reads genome sequences from FASTA files 📄.
-- Processes the sequences using a Turing Machine approach, respecting start codons (`ATG`, `AUG`) and stop codons (`UAA`, `UAG`, `UGA`, etc.) 🔬.
+- Processes the sequences using a Turing Machine approach, respecting start codons (`ATG`, `AUG`) and stop codons (`UAA`, `UAG`, `UGA`) 🔬.
 - Moves through the genome tape, executing commands and modifying memory based on nucleotide sequences 🎛️.
 
 ## Util stuff
@@ -37,7 +41,7 @@ there is data, for test this in data/ folder
 
    Example:
    ```bash
-   python main.py genome_sample.fasta
+   python main.py data/mouse_rRNAs.fa 
    ```
 
 4. **Program Output**:
@@ -88,7 +92,7 @@ Feel free to open issues or submit pull requests! Contributions are welcome to e
 
 ## 🧬 Credits
 
-This project is inspired by the fascinating world of genomics and Turing Machines. Created by [jero98772] 🌟.
+This project is inspired by the fascinating world of genomics and Turing Machines. Created by [jero98772](https://github.com/jero98772) 🌟.
 
 ---
 
